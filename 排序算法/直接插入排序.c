@@ -9,3 +9,17 @@ void InsertionSort(int a[],int n){
         }
     }
 }
+
+void InsertSort(int r[],int n){
+    int i,j;
+    int temp;
+    for(i=1;i<n;++i){
+        temp=r[i];
+        j=i-1;
+        while(j>=0&&temp<r[j]){
+            r[j+1]=r[j];
+            --j;
+        }
+        r[j+1]=temp;
+    }
+}
